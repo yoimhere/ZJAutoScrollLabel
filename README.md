@@ -1,7 +1,6 @@
 # ZJAutoScrollLabel
 
 [![CI Status](http://img.shields.io/travis/yoimhere/ZJAutoScrollLabel.svg?style=flat)](https://travis-ci.org/yoimhere/ZJAutoScrollLabel)
-[![Version](https://img.shields.io/cocoapods/v/ZJAutoScrollLabel.svg?style=flat)](http://cocoapods.org/pods/ZJAutoScrollLabel)
 [![License](https://img.shields.io/cocoapods/l/ZJAutoScrollLabel.svg?style=flat)](http://cocoapods.org/pods/ZJAutoScrollLabel)
 [![Platform](https://img.shields.io/cocoapods/p/ZJAutoScrollLabel.svg?style=flat)](http://cocoapods.org/pods/ZJAutoScrollLabel)
 
@@ -10,7 +9,7 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-iOS8 Swift4.0
+XCode 9.0+ Swift 4.0+ iOS 8.0+
 
 ## Installation
 
