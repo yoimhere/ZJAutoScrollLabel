@@ -34,7 +34,8 @@ public struct ZJAutoScrollAttribute
     
     /// text的字体颜色
     var textColor: UIColor?
-    init(direction: ZJAutoScrollDirection = .scollToLeft(kScrollSpeed), space: CGFloat = kTextsScrollSpace, isPagingEnabled: Bool = false, textFont: UIFont? = nil, textColor: UIColor? = nil) {
+    
+    public init(direction: ZJAutoScrollDirection = .scollToLeft(kScrollSpeed), space: CGFloat = kTextsScrollSpace, isPagingEnabled: Bool = false, textFont: UIFont? = nil, textColor: UIColor? = nil) {
         self.direction = direction
         self.space  = space < 0.0  ? kTextsScrollSpace : space
         self.isPagingEnabled = isPagingEnabled
