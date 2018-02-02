@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30E8F5E2BF576F9274969FCAA784763D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5E33CA46DB413630EC1EABB0CE43348C /* ZJAutoScrollLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1766FDA0265FCB54640A30A7409B1B /* ZJAutoScrollLabel.swift */; };
+		7B95CD4682DB59FFBA05C68E766609FA /* Pods-ZJAutoScrollLabel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A440EA4C6EB3A9C136E0646597F092 /* Pods-ZJAutoScrollLabel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		856BF39AA0BA36A0F421C1A12B6D415E /* Pods-ZJAutoScrollLabel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CCDE9CF4B6060B1132EB6F4E77B0E78 /* Pods-ZJAutoScrollLabel_Example-dummy.m */; };
+		BE4196A12D66D594CF1EF4BE74E2391A /* ZJAutoScrollLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD4CE45FBD5CEA9EF7B5073057E7CD8 /* ZJAutoScrollLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C70A7E90259083BF1C47B4D69B356E27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F5D0FCFA12B9F642713DED6BABF58463 /* ZJAutoScrollLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E32477E1173E13B23B27C659409BA90 /* ZJAutoScrollLabel-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		959309C2A0ECBE0FD841A6C6BDFD8C9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C56032E2971D9BD5C761A0D87E96466;
+			remoteInfo = ZJAutoScrollLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		299EDF1ED58BD59679FAE5D78F074032 /* ZJAutoScrollLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZJAutoScrollLabel-prefix.pch"; sourceTree = "<group>"; };
+		2CCDE9CF4B6060B1132EB6F4E77B0E78 /* Pods-ZJAutoScrollLabel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZJAutoScrollLabel_Example-dummy.m"; sourceTree = "<group>"; };
+		3E890359C4B2A28D366FA673F4F39DC2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EEA010BB641DFB17A24F09B98A1C773 /* Pods-ZJAutoScrollLabel_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZJAutoScrollLabel_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		50C54E9BB70AA13D64C6BD733C4673DA /* Pods-ZJAutoScrollLabel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJAutoScrollLabel_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5E32477E1173E13B23B27C659409BA90 /* ZJAutoScrollLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZJAutoScrollLabel-dummy.m"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6BD4CE45FBD5CEA9EF7B5073057E7CD8 /* ZJAutoScrollLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZJAutoScrollLabel-umbrella.h"; sourceTree = "<group>"; };
+		7C5ED8F56A0CDB2E5D7D7A05531C51AE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F3331D5236A8DAEB8FB89E2B0A6B5C1 /* Pods-ZJAutoScrollLabel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZJAutoScrollLabel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9625D77CED040A76022AD99DA8C49C49 /* Pods-ZJAutoScrollLabel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJAutoScrollLabel_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A9E995927F5CF0577197B4B5BF212C57 /* Pods_ZJAutoScrollLabel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZJAutoScrollLabel_Example.framework; path = "Pods-ZJAutoScrollLabel_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABDF0C2E7481091D8F6E0D38B4FC266A /* Pods-ZJAutoScrollLabel_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJAutoScrollLabel_Example-frameworks.sh"; sourceTree = "<group>"; };
+		BD1766FDA0265FCB54640A30A7409B1B /* ZJAutoScrollLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZJAutoScrollLabel.swift; path = ZJAutoScrollLabel/Classes/ZJAutoScrollLabel.swift; sourceTree = "<group>"; };
+		C10EDAC0C2BE031C47B237B13E296443 /* ZJAutoScrollLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZJAutoScrollLabel.xcconfig; sourceTree = "<group>"; };
+		C43762116C66E1D3EE1D407C7CE7D974 /* ZJAutoScrollLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ZJAutoScrollLabel.modulemap; sourceTree = "<group>"; };
+		DD8C3A528EA46827EDC3B84C4DB6C86E /* ZJAutoScrollLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJAutoScrollLabel.framework; path = ZJAutoScrollLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7D4EDBFC5C8043D84A93C3F32C7A8B5 /* Pods-ZJAutoScrollLabel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ZJAutoScrollLabel_Example.modulemap"; sourceTree = "<group>"; };
+		F7A440EA4C6EB3A9C136E0646597F092 /* Pods-ZJAutoScrollLabel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZJAutoScrollLabel_Example-umbrella.h"; sourceTree = "<group>"; };
+		FAB820E08AA32173308FE9EBAB22E6AC /* Pods-ZJAutoScrollLabel_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJAutoScrollLabel_Example-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		476635B9B8431F2F3421A857071A8F81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70A7E90259083BF1C47B4D69B356E27 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FE087A35AF5252D2A95FB7B9CA62BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E8F5E2BF576F9274969FCAA784763D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D5406CB1D1E03736617DA4A7138E810 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB248D220C490D10EEAC3537BB029908 /* ZJAutoScrollLabel */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		124575787DF8ADF7049863294CC17FBA /* Pods-ZJAutoScrollLabel_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3E890359C4B2A28D366FA673F4F39DC2 /* Info.plist */,
+				E7D4EDBFC5C8043D84A93C3F32C7A8B5 /* Pods-ZJAutoScrollLabel_Example.modulemap */,
+				7F3331D5236A8DAEB8FB89E2B0A6B5C1 /* Pods-ZJAutoScrollLabel_Example-acknowledgements.markdown */,
+				3EEA010BB641DFB17A24F09B98A1C773 /* Pods-ZJAutoScrollLabel_Example-acknowledgements.plist */,
+				2CCDE9CF4B6060B1132EB6F4E77B0E78 /* Pods-ZJAutoScrollLabel_Example-dummy.m */,
+				ABDF0C2E7481091D8F6E0D38B4FC266A /* Pods-ZJAutoScrollLabel_Example-frameworks.sh */,
+				FAB820E08AA32173308FE9EBAB22E6AC /* Pods-ZJAutoScrollLabel_Example-resources.sh */,
+				F7A440EA4C6EB3A9C136E0646597F092 /* Pods-ZJAutoScrollLabel_Example-umbrella.h */,
+				9625D77CED040A76022AD99DA8C49C49 /* Pods-ZJAutoScrollLabel_Example.debug.xcconfig */,
+				50C54E9BB70AA13D64C6BD733C4673DA /* Pods-ZJAutoScrollLabel_Example.release.xcconfig */,
+			);
+			name = "Pods-ZJAutoScrollLabel_Example";
+			path = "Target Support Files/Pods-ZJAutoScrollLabel_Example";
+			sourceTree = "<group>";
+		};
+		3E8DC28A54431B0C7344EDD3630FC8B8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				124575787DF8ADF7049863294CC17FBA /* Pods-ZJAutoScrollLabel_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0D5406CB1D1E03736617DA4A7138E810 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				EB4F38B8A82C41690C0B47844D0EC458 /* Products */,
+				3E8DC28A54431B0C7344EDD3630FC8B8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D128B86E19B756CA40F35143F7A181AB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C5ED8F56A0CDB2E5D7D7A05531C51AE /* Info.plist */,
+				C43762116C66E1D3EE1D407C7CE7D974 /* ZJAutoScrollLabel.modulemap */,
+				C10EDAC0C2BE031C47B237B13E296443 /* ZJAutoScrollLabel.xcconfig */,
+				5E32477E1173E13B23B27C659409BA90 /* ZJAutoScrollLabel-dummy.m */,
+				299EDF1ED58BD59679FAE5D78F074032 /* ZJAutoScrollLabel-prefix.pch */,
+				6BD4CE45FBD5CEA9EF7B5073057E7CD8 /* ZJAutoScrollLabel-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ZJAutoScrollLabel";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DB248D220C490D10EEAC3537BB029908 /* ZJAutoScrollLabel */ = {
+			isa = PBXGroup;
+			children = (
+				BD1766FDA0265FCB54640A30A7409B1B /* ZJAutoScrollLabel.swift */,
+				D128B86E19B756CA40F35143F7A181AB /* Support Files */,
+			);
+			name = ZJAutoScrollLabel;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		EB4F38B8A82C41690C0B47844D0EC458 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9E995927F5CF0577197B4B5BF212C57 /* Pods_ZJAutoScrollLabel_Example.framework */,
+				DD8C3A528EA46827EDC3B84C4DB6C86E /* ZJAutoScrollLabel.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		85AB8CD447CA23FF06D30C8F2EF4F932 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B95CD4682DB59FFBA05C68E766609FA /* Pods-ZJAutoScrollLabel_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB6087CFAE548EECDE3CE4D26B2FE39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4196A12D66D594CF1EF4BE74E2391A /* ZJAutoScrollLabel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1C56032E2971D9BD5C761A0D87E96466 /* ZJAutoScrollLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6100E7CEC6AD3D95C0CA80DE4A52C220 /* Build configuration list for PBXNativeTarget "ZJAutoScrollLabel" */;
+			buildPhases = (
+				15C75EEF6179E749420476327D1487CA /* Sources */,
+				86FE087A35AF5252D2A95FB7B9CA62BF /* Frameworks */,
+				BAB6087CFAE548EECDE3CE4D26B2FE39 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZJAutoScrollLabel;
+			productName = ZJAutoScrollLabel;
+			productReference = DD8C3A528EA46827EDC3B84C4DB6C86E /* ZJAutoScrollLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		944C1D9A9302D35006114298A02B6E77 /* Pods-ZJAutoScrollLabel_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E31C705E18E4270FB3C65FB7EDB5EA59 /* Build configuration list for PBXNativeTarget "Pods-ZJAutoScrollLabel_Example" */;
+			buildPhases = (
+				14BDE2AEEA578799DBD9AFD4C15D3057 /* Sources */,
+				476635B9B8431F2F3421A857071A8F81 /* Frameworks */,
+				85AB8CD447CA23FF06D30C8F2EF4F932 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE4C53AF0EC4648FCCDF80C75570E2BA /* PBXTargetDependency */,
+			);
+			name = "Pods-ZJAutoScrollLabel_Example";
+			productName = "Pods-ZJAutoScrollLabel_Example";
+			productReference = A9E995927F5CF0577197B4B5BF212C57 /* Pods_ZJAutoScrollLabel_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EB4F38B8A82C41690C0B47844D0EC458 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				944C1D9A9302D35006114298A02B6E77 /* Pods-ZJAutoScrollLabel_Example */,
+				1C56032E2971D9BD5C761A0D87E96466 /* ZJAutoScrollLabel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14BDE2AEEA578799DBD9AFD4C15D3057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856BF39AA0BA36A0F421C1A12B6D415E /* Pods-ZJAutoScrollLabel_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15C75EEF6179E749420476327D1487CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D0FCFA12B9F642713DED6BABF58463 /* ZJAutoScrollLabel-dummy.m in Sources */,
+				5E33CA46DB413630EC1EABB0CE43348C /* ZJAutoScrollLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE4C53AF0EC4648FCCDF80C75570E2BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZJAutoScrollLabel;
+			target = 1C56032E2971D9BD5C761A0D87E96466 /* ZJAutoScrollLabel */;
+			targetProxy = 959309C2A0ECBE0FD841A6C6BDFD8C9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13339915146CD53E2ECFFCC1153ED0A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C10EDAC0C2BE031C47B237B13E296443 /* ZJAutoScrollLabel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZJAutoScrollLabel/ZJAutoScrollLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZJAutoScrollLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZJAutoScrollLabel/ZJAutoScrollLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ZJAutoScrollLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48D4DD8232C6383A663DE2026A496D98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9625D77CED040A76022AD99DA8C49C49 /* Pods-ZJAutoScrollLabel_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ZJAutoScrollLabel_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZJAutoScrollLabel_Example/Pods-ZJAutoScrollLabel_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ZJAutoScrollLabel_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4F1E80D0CCF113D35AA887AA24E5486E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C10EDAC0C2BE031C47B237B13E296443 /* ZJAutoScrollLabel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZJAutoScrollLabel/ZJAutoScrollLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZJAutoScrollLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZJAutoScrollLabel/ZJAutoScrollLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ZJAutoScrollLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DD1269AE704C16878A01BFF16F9B5AA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50C54E9BB70AA13D64C6BD733C4673DA /* Pods-ZJAutoScrollLabel_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ZJAutoScrollLabel_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZJAutoScrollLabel_Example/Pods-ZJAutoScrollLabel_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ZJAutoScrollLabel_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6100E7CEC6AD3D95C0CA80DE4A52C220 /* Build configuration list for PBXNativeTarget "ZJAutoScrollLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13339915146CD53E2ECFFCC1153ED0A5 /* Debug */,
+				4F1E80D0CCF113D35AA887AA24E5486E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E31C705E18E4270FB3C65FB7EDB5EA59 /* Build configuration list for PBXNativeTarget "Pods-ZJAutoScrollLabel_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48D4DD8232C6383A663DE2026A496D98 /* Debug */,
+				DD1269AE704C16878A01BFF16F9B5AA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

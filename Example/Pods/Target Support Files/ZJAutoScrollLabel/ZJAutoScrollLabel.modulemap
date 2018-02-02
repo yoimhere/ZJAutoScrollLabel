@@ -1,0 +1,6 @@
+framework module ZJAutoScrollLabel {
+  umbrella header "ZJAutoScrollLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}
