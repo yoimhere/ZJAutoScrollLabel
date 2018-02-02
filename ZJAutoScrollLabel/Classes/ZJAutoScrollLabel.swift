@@ -10,7 +10,9 @@ private let kTextsScrollSpace: CGFloat = 30
 private let kScrollSpeed: CGFloat = 0.8
 
 public enum ZJAutoScrollDirection{
+    /// ←_← 滚动  (正数)
     case scollToLeft(CGFloat)
+    /// →_→ 滚动  (正数)
     case scollToRight(CGFloat)
 }
 
@@ -18,17 +20,23 @@ public struct ZJAutoScrollAttribute
 {
     public static let `default` = ZJAutoScrollAttribute()
     
-    /// text之间的间隔
+    /// text之间的间隔  正数
     var space: CGFloat
+    
+    /// text滚向哪个方向
     var direction: ZJAutoScrollDirection
     
-    /// 会限制text的最小宽度为父视图的宽
+    /// true 会限制text的最小宽度为父视图的宽，  并且text之间的空白间隔会不固定
     var isPagingEnabled: Bool
+    
+    /// text的字体大小
     var textFont: UIFont?
+    
+    /// text的字体颜色
     var textColor: UIColor?
-    init(direction: ZJAutoScrollDirection = .scollToLeft(kScrollSpeed), space: CGFloat = kTextsScrollSpace, isPagingEnabled: Bool = true, textFont: UIFont? = nil, textColor: UIColor? = nil) {
+    init(direction: ZJAutoScrollDirection = .scollToLeft(kScrollSpeed), space: CGFloat = kTextsScrollSpace, isPagingEnabled: Bool = false, textFont: UIFont? = nil, textColor: UIColor? = nil) {
         self.direction = direction
-        self.space  = space
+        self.space  = space < 0.0  ? kTextsScrollSpace : space
         self.isPagingEnabled = isPagingEnabled
         self.textFont = textFont
         self.textColor = textColor
@@ -41,7 +49,7 @@ public class ZJAutoScrollLabel: UIView
     private (set) var texts:[String] = []
     private (set) var textAndWidths = [String:CGFloat]()
     private (set) var textIndex = 0
-    
+
     private var reusedlabels: [UILabel] = []
     private var usedLabels: [UILabel] = []
     
@@ -76,16 +84,6 @@ public class ZJAutoScrollLabel: UIView
         return displayLink
     }()
     
-    public override var frame: CGRect {
-        get {
-            return super.frame
-        }
-        set {
-            super.frame = newValue
-            setupInfo()
-        }
-    }
-    
     //MARK: - Life
     public override init(frame: CGRect)
     {
@@ -118,25 +116,16 @@ public class ZJAutoScrollLabel: UIView
     public func setTexts(_ texts:[String])
     {
         self.texts = texts
-        setupInfo()
-    }
-    
-    func setupInfo() {
-        if texts.count > 0 &&  self.frame != .zero{
-            calculateTextSize()
-            refreshScrollInfo()
-        }
+        calculateTextSize()
     }
     
    /// 预先计算字体宽度并缓存
     func calculateTextSize()
     {
         self.textAndWidths.removeAll()
-        var size = self.bounds.size
-        size.width = CGFloat.greatestFiniteMagnitude
         let usedFont = scrollAttribute.textFont ?? UILabel().font!
         for text in self.texts {
-            let width = text.boundingRect(with: size, options:.usesFontLeading, attributes:[.font:usedFont], context: nil).size.width;
+            let width = text.boundingRect(with: CGSize.init(width: CGFloat.greatestFiniteMagnitude, height: 50), options:.usesFontLeading, attributes:[.font:usedFont], context: nil).size.width;
             self.textAndWidths[text] = checkLabelWidth(with: width)
         }
     }
