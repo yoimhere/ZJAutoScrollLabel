@@ -1,9 +1,5 @@
 # ZJAutoScrollLabel
 
-[![CI Status](http://img.shields.io/travis/yoimhere/ZJAutoScrollLabel.svg?style=flat)](https://travis-ci.org/yoimhere/ZJAutoScrollLabel)
-[![License](https://img.shields.io/cocoapods/l/ZJAutoScrollLabel.svg?style=flat)](http://cocoapods.org/pods/ZJAutoScrollLabel)
-[![Platform](https://img.shields.io/cocoapods/p/ZJAutoScrollLabel.svg?style=flat)](http://cocoapods.org/pods/ZJAutoScrollLabel)
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
