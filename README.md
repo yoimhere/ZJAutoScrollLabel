@@ -22,7 +22,7 @@ pod 'ZJAutoScrollLabel'
 
 ## Author
 
-yoimhere, yuzhijie1230@qq.com
+yoimhere, yo_imhere@163.com
 
 ## License
 
