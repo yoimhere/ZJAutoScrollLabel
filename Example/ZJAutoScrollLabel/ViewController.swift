@@ -13,16 +13,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let scoll = ZJAutoScrollLabel()
-        scoll.frame = CGRect.init(x: 0, y: 0, width: view.frame.size.width, height: 100)
-        scoll.setTexts(["ZJAutoScrollLabel 是一个自动滚动的Label","希望大家能够用的顺畅"])
-        scoll.backgroundColor = .red;
-        scoll.resume()
-        view.addSubview(scoll)
+        let noticeView = ZJNoticeView()
+        noticeView.frame = CGRect(x: 10, y: 0, width: view.frame.size.width - 20, height: 30)
+        noticeView.layer.cornerRadius  = 8
+        noticeView.layer.masksToBounds = true
+        noticeView.center = view.center
+        noticeView.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5);
+        view.addSubview(noticeView)
         
-        DispatchQueue.main.asyncAfter(wallDeadline: .now() + 3) {
-            scoll.setTexts(["哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈","啊啊啊啊啊啊啊啊啊啊啊啊啊"])
-        }
+        noticeView.scrollLabel.setTexts(["关关雎鸠，在河之洲。窈窕淑女，君子好逑。", "参差荇菜，左右流之。窈窕淑女，寤寐求之。", "求之不得，寤寐思服。悠哉悠哉，辗转反侧。", "参差荇菜，左右采之。窈窕淑女，琴瑟友之。", "参差荇菜，左右芼之。窈窕淑女，钟鼓乐之。"])
+        noticeView.scrollLabel.resume()
     }
 
     override func didReceiveMemoryWarning() {

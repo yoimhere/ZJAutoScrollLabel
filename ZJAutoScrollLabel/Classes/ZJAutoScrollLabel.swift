@@ -92,15 +92,19 @@ public class ZJAutoScrollLabel: UIView
     lazy var displayLink: CADisplayLink = {
         let displayLink = CADisplayLink(target: self, selector: #selector(refreshScrollInfo))
         displayLink.add(to: .current, forMode: .commonModes)
+        displayLink.isPaused = true
         return displayLink
     }()
+    
+    public var isPaused: Bool {
+        return displayLink.isPaused
+    }
     
     //MARK: - Life
     public override init(frame: CGRect)
     {
         super.init(frame: frame)
         self.clipsToBounds = true
-        stop();
     }
     
     public required init?(coder aDecoder: NSCoder)
@@ -111,7 +115,7 @@ public class ZJAutoScrollLabel: UIView
     public convenience init(frame: CGRect, scrollAttribute: ZJAutoScrollAttribute)
     {
         self.init(frame: frame)
-        self.scrollAttribute = scrollAttribute;
+        self.scrollAttribute = scrollAttribute
     }
     
     public convenience init(scrollAttribute: ZJAutoScrollAttribute)
@@ -119,7 +123,8 @@ public class ZJAutoScrollLabel: UIView
         self.init(frame: .zero, scrollAttribute: scrollAttribute)
     }
     
-    deinit {
+    deinit
+    {
         displayLink.invalidate()
     }
     
@@ -136,7 +141,7 @@ public class ZJAutoScrollLabel: UIView
         self.textAndWidths.removeAll()
         let usedFont = scrollAttribute.textFont ?? UILabel().font!
         for text in self.texts {
-            let width = text.boundingRect(with: CGSize.init(width: CGFloat.greatestFiniteMagnitude, height: 50), options:.usesFontLeading, attributes:[.font:usedFont], context: nil).size.width;
+            let width = text.boundingRect(with: CGSize.init(width: CGFloat.greatestFiniteMagnitude, height: 50), options:.usesFontLeading, attributes:[.font:usedFont], context: nil).size.width
             self.textAndWidths[text] = checkLabelWidth(with: width)
         }
     }
@@ -151,7 +156,8 @@ public class ZJAutoScrollLabel: UIView
         moveDistance()
     }
     
-    func checkFisrtLabel() {
+    func checkFisrtLabel()
+    {
         if let firstLabel = usedLabels.first {
             let frame = firstLabel.frame
             let isOutOfBound = isScollToLeft ? frame.maxX <= lableBoundsMinX :  frame.minX >= lableBoundsMaxX
@@ -163,7 +169,8 @@ public class ZJAutoScrollLabel: UIView
         }
     }
     
-    func checkLastLabel() {
+    func checkLastLabel()
+    {
         while true {
             var isNeedNewLabel = true
             let startX = isScollToLeft ?  lableBoundsMaxX : lableBoundsMinX
@@ -175,12 +182,13 @@ public class ZJAutoScrollLabel: UIView
             if isNeedNewLabel{
                 addNewLable(startX:startX)
             }else{
-                break;
+                break
             }
         }
     }
     
-    func moveDistance (){
+    func moveDistance ()
+    {
         let _ = usedLabels.map{$0.frame.origin.x = $0.frame.origin.x + perframeDistance}
     }
     
@@ -192,7 +200,7 @@ public class ZJAutoScrollLabel: UIView
         let text = texts[textIndex%texts.count]
         newLabel.text = text
 
-        var frame =  self.bounds;
+        var frame =  self.bounds
         if let hasWidth = self.textAndWidths[text]{
             frame.size.width = hasWidth
         }else{
@@ -205,17 +213,18 @@ public class ZJAutoScrollLabel: UIView
         if isScollToLeft{
             frame.origin.x = x
         }else{
-            frame.origin.x = x - frame.width;
+            frame.origin.x = x - frame.width
         }
         
-        newLabel.frame = frame;
+        newLabel.frame = frame
 
         addSubview(newLabel)
         usedLabels.append(newLabel)
         textIndex = textIndex + 1
     }
     
-    func checkLabelWidth(with width: CGFloat) -> CGFloat {
+    func checkLabelWidth(with width: CGFloat) -> CGFloat
+    {
        return scrollAttribute.isPagingEnabled ? max(width, bounds.size.width) :  width
     }
     
@@ -232,16 +241,16 @@ public class ZJAutoScrollLabel: UIView
             label = reusedlabels.removeLast()
         }
         
-        return label;
+        return label
     }
     
     public func resume()
     {
-        displayLink.isPaused = false;
+        displayLink.isPaused = false
     }
     
     public func stop()
     {
-        displayLink.isPaused = true;
+        displayLink.isPaused = true
     }
 }

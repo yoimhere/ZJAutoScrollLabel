@@ -13,6 +13,7 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		84B3F8EC2027EFA40056BDE8 /* ZJNoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3F8EB2027EFA40056BDE8 /* ZJNoticeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		60FD735009AED06F46C45F4B /* Pods_ZJAutoScrollLabel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJAutoScrollLabel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B3F8EB2027EFA40056BDE8 /* ZJNoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJNoticeView.swift; sourceTree = "<group>"; };
 		B3F75431D92763468220F79B /* Pods-ZJAutoScrollLabel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJAutoScrollLabel_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJAutoScrollLabel_Example/Pods-ZJAutoScrollLabel_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D3603FE5250D5183EF42389F /* ZJAutoScrollLabel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZJAutoScrollLabel.podspec; path = ../ZJAutoScrollLabel.podspec; sourceTree = "<group>"; };
 		E2CD63F5CF124F02C7C25A65 /* Pods_ZJAutoScrollLabel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJAutoScrollLabel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				84B3F8EB2027EFA40056BDE8 /* ZJNoticeView.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -243,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B3F8EC2027EFA40056BDE8 /* ZJNoticeView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
