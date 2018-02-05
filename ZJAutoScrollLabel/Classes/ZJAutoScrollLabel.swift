@@ -97,7 +97,13 @@ public class ZJAutoScrollLabel: UIView
     }()
     
     public var isPaused: Bool {
-        return displayLink.isPaused
+        set {
+            displayLink.isPaused = newValue
+        }
+    
+        get {
+           return displayLink.isPaused
+        }
     }
     
     //MARK: - Life

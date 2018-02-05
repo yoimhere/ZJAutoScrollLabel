@@ -34,7 +34,8 @@ class ZJNoticeView: UIView
         super.init(coder: aDecoder)
     }
     
-    override func layoutSubviews() {
+    override func layoutSubviews()
+    {
         super.layoutSubviews()
         let size = frame.size
         let headerViewSizeVal = CGFloat(15)

@@ -26,7 +26,12 @@ class ViewController: UIViewController {
                                          "求之不得，寤寐思服。悠哉悠哉，辗转反侧。",
                                          "参差荇菜，左右采之。窈窕淑女，琴瑟友之。",
                                          "参差荇菜，左右芼之。窈窕淑女，钟鼓乐之。"])
+//        noticeView.scrollLabel.isPaused = false
+        
         noticeView.scrollLabel.resume()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            noticeView.scrollLabel.stop()
+        }
     }
 
     override func didReceiveMemoryWarning() {
