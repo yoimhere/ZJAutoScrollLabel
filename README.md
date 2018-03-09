@@ -4,6 +4,8 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+![preview](https://github.com/yoimhere/ZJAutoScrollLabel/blob/master/preview.gif)
+
 ## Requirements
 * XCode 9.0+ 
 * Swift 4.0+ 
