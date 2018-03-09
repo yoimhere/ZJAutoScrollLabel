@@ -29,9 +29,9 @@ class ViewController: UIViewController {
 //        noticeView.scrollLabel.isPaused = false
         
         noticeView.scrollLabel.resume()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            noticeView.scrollLabel.stop()
-        }
+//          (deadline: .now() + 5) {
+//            noticeView.scrollLabel.stop()
+//        }
     }
 
     override func didReceiveMemoryWarning() {
